@@ -12,6 +12,11 @@ body {
 }
 
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 .navbar {
     position: sticky;
     top: 0;
