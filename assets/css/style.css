@@ -6,34 +6,122 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #0a0a0a;
-    color: white;
+    background-color: #0b0f14;
+    color: #f5f5f5;
     line-height: 1.6;
 }
 
+/* HEADER */
+
 header {
-    background-color: #111111;
-    padding: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-right: 20px;
-}
-
-section {
-    padding: 60px 20px;
-}
-
-.hero {
+    background: linear-gradient(135deg, #111827, #1f2937);
     text-align: center;
-    padding: 100px 20px;
+    padding: 80px 20px;
 }
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #cbd5e1;
+    margin-top: 10px;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+/* SECTIONS */
+
+.section {
+    margin-bottom: 60px;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+/* SERVICES GRID */
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* CARDS */
+
+.card {
+    background-color: #111827;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #1e293b;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #38bdf8;
+}
+
+/* LISTS */
+
+ul,
+ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* CTA SECTION */
+
+.cta {
+    background: #1e293b;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+}
+
+.cta a {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #38bdf8;
+    color: black;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta a:hover {
+    background-color: #0ea5e9;
+}
+
+/* FOOTER */
 
 footer {
-    background-color: #111111;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+    background-color: #111827;
+    color: #94a3b8;
     margin-top: 40px;
 }
