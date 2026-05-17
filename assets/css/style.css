@@ -65,11 +65,12 @@ header p {
     padding: 25px;
     border-radius: 12px;
     border: 1px solid #1e293b;
-    transition: transform 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    border-color: #38bdf8;
 }
 
 .card h3 {
