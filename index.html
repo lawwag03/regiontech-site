@@ -4,19 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Region Tech | Secure. Recycle. Repair.</title>
-
- <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<body>
 
-
-  <nav class="navbar">
-
-  <div class="logo">Region Tech</div>
-
-  <button class="hamburger" onclick="toggleMenu()">
-    ☰
-  </button>
-
+<nav class="navbar">
+  <a href="index.html" class="logo">Region<span>Tech</span></a>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation">&#9776;</button>
   <div class="nav-links" id="navLinks">
     <a href="#services">Services</a>
     <a href="#why">Why Us</a>
@@ -24,121 +21,208 @@
     <a href="projects.html">Projects</a>
     <a href="contact.html">Contact</a>
   </div>
-
 </nav>
 
-  
-<body>
-
 <header class="hero">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
   <div class="hero-content">
-    <h1>Region Tech</h1>
-    <p class="tagline">Secure. Recycle. Repair.</p>
-    <p class="subtext">Proudly serving Northwest Indiana</p>
-
+    <p class="hero-eyebrow">Northwest Indiana's Local Tech Partner</p>
+    <h1>Region<span>Tech</span></h1>
+    <p class="tagline">Secure.<span class="dot">&#8201;·&#8201;</span>Recycle.<span class="dot">&#8201;·&#8201;</span>Repair.</p>
+    <p class="subtext">Cybersecurity, device repair, and responsible e-waste solutions — done locally, done right.</p>
     <div class="hero-buttons">
-      <a href="#services">View Services</a>
-      <a href="mailto:info@regiontech.org">Get a Quote</a>
+      <a href="#services" class="btn btn-primary">View Services</a>
+      <a href="mailto:info@regiontech.org" class="btn btn-outline">Get a Quote</a>
     </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><span class="stat-num">Local</span><span class="stat-label">Pickup Included</span></div>
+    <div class="stat-divider" aria-hidden="true"></div>
+    <div class="stat"><span class="stat-num">Flat-Rate</span><span class="stat-label">Pricing</span></div>
+    <div class="stat-divider" aria-hidden="true"></div>
+    <div class="stat"><span class="stat-num">No Ship</span><span class="stat-label">All In-House</span></div>
   </div>
 </header>
 
-<div class="container">
+<main class="container">
 
   <!-- VALUE PROP -->
-  <div class="section" id="services">
-    <h2>What We Do</h2>
-    <p>
-      Region Tech empowers our community by delivering reliable cybersecurity,
-      tech support, and responsible e-waste solutions. We protect digital spaces,
-      repair devices, and make technology accessible for households and small businesses.
+  <section class="section fade-in" id="services">
+    <div class="section-label">What We Do</div>
+    <h2>Tech services built for the community</h2>
+    <p class="section-intro">
+      Region Tech empowers Northwest Indiana households and small businesses with reliable cybersecurity,
+      hands-on tech support, and responsible e-waste solutions. We protect your digital life,
+      fix what's broken, and dispose of old devices safely.
     </p>
-  </div>
+  </section>
 
-  <!-- SERVICES -->
-  <div class="section">
-    <h2>Our Services</h2>
-
+  <!-- SERVICES GRID -->
+  <section class="section fade-in">
     <div class="services">
 
       <div class="card">
-        <h3>Cybersecurity (Home)</h3>
-        <p>Protect your home devices, accounts, and Wi-Fi from modern threats.</p>
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Cybersecurity — Home</h3>
+        <p>Protect your devices, accounts, and Wi-Fi from modern threats. Security audits, VPN setup, and more.</p>
       </div>
 
       <div class="card">
-        <h3>Cybersecurity (Business)</h3>
-        <p>Security setups for small businesses, networks, and employee systems.</p>
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3>Cybersecurity — Business</h3>
+        <p>Network security, endpoint protection, and employee system hardening for small businesses.</p>
       </div>
 
       <div class="card">
-        <h3>Tech Repairs & Installations</h3>
-        <p>Hardware repair, setup, troubleshooting, and system optimization.</p>
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h3>Tech Repairs &amp; Installs</h3>
+        <p>Hardware repair, OS reinstalls, new device setup, troubleshooting, and system optimization.</p>
       </div>
 
       <div class="card">
-        <h3>Wi-Fi & Network Optimization</h3>
-        <p>Improve speed, reliability, and coverage across your space.</p>
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1" fill="currentColor"/></svg>
+        </div>
+        <h3>Wi-Fi &amp; Network Optimization</h3>
+        <p>Improve speed, reliability, and coverage. Dead zones eliminated, mesh setups configured.</p>
       </div>
 
       <div class="card">
-        <h3>Tech Pickup & Disposal</h3>
-        <p>Secure local pickup for old devices, recycling, and data-safe disposal.</p>
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        </div>
+        <h3>Tech Pickup &amp; Disposal</h3>
+        <p>Secure local pickup for old devices. Data-safe destruction and responsible recycling included.</p>
       </div>
 
       <div class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+        </div>
         <h3>Media Conversion</h3>
-        <p>Convert VHS and legacy media into digital formats.</p>
+        <p>Convert VHS tapes, film, and other legacy media into modern digital formats you can keep forever.</p>
       </div>
 
     </div>
-  </div>
+  </section>
 
   <!-- WHY US -->
-  <div class="section" id="why">
-    <h2>Why Region Tech?</h2>
-    <ul>
-      <li>Local pickup included</li>
-      <li>No shipping — everything done in-house</li>
-      <li>Flat-rate pricing</li>
-      <li>Fast turnaround times</li>
-      <li>Secure, sustainable, community-focused service</li>
-    </ul>
-  </div>
+  <section class="section fade-in" id="why">
+    <div class="section-label">Why Region Tech</div>
+    <h2>Built different. Built local.</h2>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-check" aria-hidden="true">&#10003;</div>
+        <div>
+          <strong>Local pickup included</strong>
+          <p>We come to you — no need to haul equipment across town.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-check" aria-hidden="true">&#10003;</div>
+        <div>
+          <strong>No shipping — all in-house</strong>
+          <p>Your devices never leave the region. Everything handled locally.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-check" aria-hidden="true">&#10003;</div>
+        <div>
+          <strong>Flat-rate pricing</strong>
+          <p>Know what you'll pay before we start. No surprise invoices.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-check" aria-hidden="true">&#10003;</div>
+        <div>
+          <strong>Fast turnaround</strong>
+          <p>Most repairs and services completed within 48 hours.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-check" aria-hidden="true">&#10003;</div>
+        <div>
+          <strong>Secure &amp; sustainable</strong>
+          <p>Data-safe disposal and eco-conscious recycling practices.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-check" aria-hidden="true">&#10003;</div>
+        <div>
+          <strong>Community-focused</strong>
+          <p>A local business serving Northwest Indiana — not a faceless chain.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- HOW IT WORKS -->
-  <div class="section" id="how">
-    <h2>How It Works</h2>
-    <ol>
-      <li>Request a service (call, text, or email)</li>
-      <li>We schedule pickup or appointment</li>
-      <li>We complete the service securely</li>
-      <li>Return, install, or responsibly dispose of equipment</li>
-    </ol>
-  </div>
+  <section class="section fade-in" id="how">
+    <div class="section-label">How It Works</div>
+    <h2>Four steps. No hassle.</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-body">
+          <h3>Request a service</h3>
+          <p>Call, text, or email us to describe what you need. We'll respond fast.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-body">
+          <h3>Schedule pickup or appointment</h3>
+          <p>We set a time that works for you — including local pickup at no extra charge.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-body">
+          <h3>We complete the service</h3>
+          <p>All work done securely in-house. We keep you updated throughout.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div class="step-body">
+          <h3>Return, install, or dispose</h3>
+          <p>We return repaired devices, install equipment on-site, or responsibly dispose of old tech.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- CTA -->
-  <div class="section">
+  <section class="section fade-in">
     <div class="cta">
-      <h2>Schedule Your Service</h2>
-      <p>Email: info@regiontech.org</p>
-      <p>Call/Text: (219) 200-2408</p>
-      <a href="mailto:info@regiontech.org">Contact Us</a>
+      <div class="cta-content">
+        <p class="cta-eyebrow">Ready to get started?</p>
+        <h2>Schedule your service today</h2>
+        <p class="cta-sub">Local, fast, and flat-rate. Serving Northwest Indiana.</p>
+      </div>
+      <div class="cta-contact">
+        <a href="mailto:info@regiontech.org" class="btn btn-primary">Email Us</a>
+        <a href="tel:+12192002408" class="btn btn-outline">Call / Text (219) 200-2408</a>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <!-- GOOGLE BUSINESS -->
-  <div class="section">
-    <h2>Find Us</h2>
-    <p>View our Google Business Profile for reviews and updates.</p>
-  </div>
-
-</div>
+</main>
 
 <footer>
-  © 2026 Region Tech LLC — Secure. Recycle. Repair.
+  <div class="footer-inner">
+    <div class="footer-brand">Region<span>Tech</span> LLC</div>
+    <p class="footer-tagline">Secure. Recycle. Repair.</p>
+    <p class="footer-copy">&copy; 2026 Region Tech LLC &mdash; Proudly serving Northwest Indiana</p>
+  </div>
 </footer>
 
-<script src="assets/js/script.js"></script>  
+<script src="assets/js/script.js"></script>
 </body>
 </html>
