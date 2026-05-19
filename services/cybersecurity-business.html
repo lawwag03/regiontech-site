@@ -4,21 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Business Cybersecurity | Region Tech</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar">
   <a href="../index.html" class="logo">Region<span>Tech</span></a>
-
-  <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation">&#9776;</button>
   <div class="nav-links" id="navLinks">
     <a href="../index.html">Home</a>
-    <a href="../index.html#services">Services</a>
+    <a href="../services.html">Services</a>
     <a href="../index.html#why">Why Us</a>
     <a href="../index.html#how">How It Works</a>
     <a href="../projects.html">Projects</a>
@@ -26,109 +24,126 @@
   </div>
 </nav>
 
-<!-- HERO -->
 <header class="hero">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
   <div class="hero-content">
-    <p class="hero-eyebrow">Secure Local Service</p>
-    <h1>Business Cybersecurity</h1>
+    <p class="hero-eyebrow">Business Security</p>
+    <h1>Business <span>Cybersecurity</span></h1>
     <p class="subtext">
-      Safe, responsible, and local electronics disposal with secure data handling.
+      Enterprise-level protection scaled for small businesses — without the enterprise price tag or the waiting around.
     </p>
-
     <div class="hero-buttons">
-      <a href="../contact.html" class="btn btn-primary">Schedule Pickup</a>
-      <a href="../index.html#services" class="btn btn-outline">View Other Services</a>
+      <a href="../contact.html" class="btn btn-primary">Get a Business Assessment</a>
+      <a href="../services.html" class="btn btn-outline">View All Services</a>
     </div>
   </div>
 </header>
 
 <main class="container">
 
-  <!-- OVERVIEW -->
-  <section class="section">
-    <h2>Overview</h2>
+  <section class="section fade-in">
+    <div class="section-label">Overview</div>
+    <h2>Small businesses are the most targeted</h2>
     <p class="section-intro">
-      We provide secure pickup and disposal of old electronics across Northwest Indiana.
-      Every device is handled safely with data protection and environmental responsibility in mind.
+      Over 40% of cyberattacks target small businesses — and most lack the IT staff to respond.
+      Region Tech provides practical, affordable security for local businesses: network hardening,
+      employee system protection, and clear guidance on staying safe without disrupting your workflow.
     </p>
   </section>
 
-  <!-- WHAT WE HANDLE -->
-  <section class="section">
-    <h2>What We Handle</h2>
-
+  <section class="section fade-in">
+    <h2>What's Included</h2>
     <div class="services">
       <div class="card">
-        <h3>Computers & Laptops</h3>
-        <p>Secure removal and recycling of personal and business machines.</p>
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3>Network Security Assessment</h3>
+        <p>Audit your business network for vulnerabilities, open ports, and misconfigurations.</p>
       </div>
-
       <div class="card">
-        <h3>Hard Drives</h3>
-        <p>Data-safe destruction or wiping before disposal.</p>
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Employee System Hardening</h3>
+        <p>Secure workstations, enforce update policies, and configure user account controls.</p>
       </div>
-
       <div class="card">
-        <h3>Networking Gear</h3>
-        <p>Routers, switches, modems, and infrastructure hardware.</p>
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h3>Access Controls & Permissions</h3>
+        <p>Ensure employees only access what they need — reducing your attack surface.</p>
       </div>
-
       <div class="card">
-        <h3>Misc Electronics</h3>
-        <p>Printers, accessories, cables, and outdated tech.</p>
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3>Firewall & Router Configuration</h3>
+        <p>Properly configure business routers and firewalls to block unauthorized access.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <h3>Email Security & Phishing Defense</h3>
+        <p>Configure spam filters, set up DMARC/SPF records, and train staff on phishing tactics.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+        </div>
+        <h3>Backup & Recovery Planning</h3>
+        <p>Set up reliable backups so you can recover quickly from ransomware or hardware failure.</p>
       </div>
     </div>
   </section>
 
-  <!-- PROCESS -->
-  <section class="section">
-    <h2>Process</h2>
-
+  <section class="section fade-in">
+    <div class="section-label">Process</div>
+    <h2>How it works</h2>
     <div class="steps">
       <div class="step">
         <div class="step-num">01</div>
         <div class="step-body">
-          <h3>Schedule Pickup</h3>
-          <p>Contact us to set a time that works for you.</p>
+          <h3>Schedule an on-site assessment</h3>
+          <p>We visit your business location to understand your setup, team size, and risk areas.</p>
         </div>
       </div>
-
       <div class="step">
         <div class="step-num">02</div>
         <div class="step-body">
-          <h3>On-Site Collection</h3>
-          <p>We come to your home or business to collect devices securely.</p>
+          <h3>Full network and system audit</h3>
+          <p>We document vulnerabilities across your network, devices, and user accounts.</p>
         </div>
       </div>
-
       <div class="step">
         <div class="step-num">03</div>
         <div class="step-body">
-          <h3>Secure Handling</h3>
-          <p>Data protection procedures are applied before disposal.</p>
+          <h3>Remediation and hardening</h3>
+          <p>We fix what we find — reconfiguring systems, patching gaps, and setting up protections.</p>
         </div>
       </div>
-
       <div class="step">
         <div class="step-num">04</div>
         <div class="step-body">
-          <h3>Responsible Recycling</h3>
-          <p>Devices are recycled or disposed of following environmental standards.</p>
+          <h3>Summary report</h3>
+          <p>You get a written summary of what was found, what was fixed, and what to watch for going forward.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="section">
+  <section class="section fade-in">
     <div class="cta">
       <div class="cta-content">
-        <h2>Ready to clear out old tech?</h2>
-        <p class="cta-sub">Fast, local, and secure pickup in Northwest Indiana.</p>
+        <p class="cta-eyebrow">Protect your business</p>
+        <h2>Schedule a business security assessment</h2>
+        <p class="cta-sub">Flat-rate pricing. Local service. Northwest Indiana.</p>
       </div>
-
       <div class="cta-contact">
-        <a href="../contact.html" class="btn btn-primary">Schedule Pickup</a>
+        <a href="../contact.html" class="btn btn-primary">Get Started</a>
+        <a href="tel:+12192002408" class="btn btn-outline">(219) 200-2408</a>
       </div>
     </div>
   </section>
@@ -139,7 +154,7 @@
   <div class="footer-inner">
     <div class="footer-brand">Region<span>Tech</span> LLC</div>
     <p class="footer-tagline">Secure. Recycle. Repair.</p>
-    <p class="footer-copy">&copy; 2026 Region Tech LLC</p>
+    <p class="footer-copy">&copy; 2026 Region Tech LLC &mdash; Proudly serving Northwest Indiana</p>
   </div>
 </footer>
 
