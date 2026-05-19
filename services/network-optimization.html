@@ -3,22 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Network Optimization | Region Tech</title>
-
+  <title>Wi-Fi & Network Optimization | Region Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar">
   <a href="../index.html" class="logo">Region<span>Tech</span></a>
-
-  <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation">&#9776;</button>
   <div class="nav-links" id="navLinks">
     <a href="../index.html">Home</a>
-    <a href="../index.html#services">Services</a>
+    <a href="../services.html">Services</a>
     <a href="../index.html#why">Why Us</a>
     <a href="../index.html#how">How It Works</a>
     <a href="../projects.html">Projects</a>
@@ -26,109 +24,126 @@
   </div>
 </nav>
 
-<!-- HERO -->
 <header class="hero">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
   <div class="hero-content">
-    <p class="hero-eyebrow">Secure Local Service</p>
-    <h1>Network Optimization</h1>
+    <p class="hero-eyebrow">Connectivity</p>
+    <h1>Wi-Fi &amp; Network <span>Optimization</span></h1>
     <p class="subtext">
-      Safe, responsible, and local electronics disposal with secure data handling.
+      Eliminate dead zones, fix slow speeds, and build a reliable network — for your home or business.
     </p>
-
     <div class="hero-buttons">
-      <a href="../contact.html" class="btn btn-primary">Schedule Pickup</a>
-      <a href="../index.html#services" class="btn btn-outline">View Other Services</a>
+      <a href="../contact.html" class="btn btn-primary">Fix My Network</a>
+      <a href="../services.html" class="btn btn-outline">View All Services</a>
     </div>
   </div>
 </header>
 
 <main class="container">
 
-  <!-- OVERVIEW -->
-  <section class="section">
-    <h2>Overview</h2>
+  <section class="section fade-in">
+    <div class="section-label">Overview</div>
+    <h2>Stop living with bad Wi-Fi</h2>
     <p class="section-intro">
-      We provide secure pickup and disposal of old electronics across Northwest Indiana.
-      Every device is handled safely with data protection and environmental responsibility in mind.
+      Slow speeds, rooms with no signal, devices constantly dropping — these are fixable problems.
+      Region Tech analyzes your space and network hardware, then reconfigures or upgrades your setup
+      so every corner of your home or office stays connected.
     </p>
   </section>
 
-  <!-- WHAT WE HANDLE -->
-  <section class="section">
-    <h2>What We Handle</h2>
-
+  <section class="section fade-in">
+    <h2>What We Do</h2>
     <div class="services">
       <div class="card">
-        <h3>Computers & Laptops</h3>
-        <p>Secure removal and recycling of personal and business machines.</p>
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1" fill="currentColor"/></svg>
+        </div>
+        <h3>Wi-Fi Signal Assessment</h3>
+        <p>Map signal strength throughout your space and identify dead zones and interference sources.</p>
       </div>
-
       <div class="card">
-        <h3>Hard Drives</h3>
-        <p>Data-safe destruction or wiping before disposal.</p>
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3>Router Configuration</h3>
+        <p>Optimize channel selection, bandwidth settings, QoS, and firmware for peak performance.</p>
       </div>
-
       <div class="card">
-        <h3>Networking Gear</h3>
-        <p>Routers, switches, modems, and infrastructure hardware.</p>
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3>Mesh Network Setup</h3>
+        <p>Install and configure mesh Wi-Fi systems for whole-home or whole-office coverage.</p>
       </div>
-
       <div class="card">
-        <h3>Misc Electronics</h3>
-        <p>Printers, accessories, cables, and outdated tech.</p>
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Guest Network Setup</h3>
+        <p>Separate network for visitors or IoT devices — keeping your main network isolated and secure.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+        </div>
+        <h3>Wired Network Planning</h3>
+        <p>Recommend and help configure Ethernet runs for gaming, streaming, or office workstations.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>ISP Troubleshooting</h3>
+        <p>Identify whether the issue is your equipment or your ISP — and help you fight back if it's them.</p>
       </div>
     </div>
   </section>
 
-  <!-- PROCESS -->
-  <section class="section">
-    <h2>Process</h2>
-
+  <section class="section fade-in">
+    <div class="section-label">Process</div>
+    <h2>How it works</h2>
     <div class="steps">
       <div class="step">
         <div class="step-num">01</div>
         <div class="step-body">
-          <h3>Schedule Pickup</h3>
-          <p>Contact us to set a time that works for you.</p>
+          <h3>Tell us your problem</h3>
+          <p>Slow speeds? Dead zones? Constant drops? Describe the issue and we'll set up a visit.</p>
         </div>
       </div>
-
       <div class="step">
         <div class="step-num">02</div>
         <div class="step-body">
-          <h3>On-Site Collection</h3>
-          <p>We come to your home or business to collect devices securely.</p>
+          <h3>On-site signal assessment</h3>
+          <p>We walk your space, test signal levels, and identify exactly where the problem is.</p>
         </div>
       </div>
-
       <div class="step">
         <div class="step-num">03</div>
         <div class="step-body">
-          <h3>Secure Handling</h3>
-          <p>Data protection procedures are applied before disposal.</p>
+          <h3>Configure and optimize</h3>
+          <p>We reconfigure your existing hardware or recommend and install new equipment as needed.</p>
         </div>
       </div>
-
       <div class="step">
         <div class="step-num">04</div>
         <div class="step-body">
-          <h3>Responsible Recycling</h3>
-          <p>Devices are recycled or disposed of following environmental standards.</p>
+          <h3>Test and confirm</h3>
+          <p>We verify coverage and speed throughout the space before we leave. No guesswork.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="section">
+  <section class="section fade-in">
     <div class="cta">
       <div class="cta-content">
-        <h2>Ready to clear out old tech?</h2>
-        <p class="cta-sub">Fast, local, and secure pickup in Northwest Indiana.</p>
+        <p class="cta-eyebrow">Done with dead zones?</p>
+        <h2>Get a network that actually works</h2>
+        <p class="cta-sub">Flat-rate pricing. Local service. Northwest Indiana.</p>
       </div>
-
       <div class="cta-contact">
-        <a href="../contact.html" class="btn btn-primary">Schedule Pickup</a>
+        <a href="../contact.html" class="btn btn-primary">Book a Visit</a>
+        <a href="tel:+12192002408" class="btn btn-outline">(219) 200-2408</a>
       </div>
     </div>
   </section>
@@ -139,7 +154,7 @@
   <div class="footer-inner">
     <div class="footer-brand">Region<span>Tech</span> LLC</div>
     <p class="footer-tagline">Secure. Recycle. Repair.</p>
-    <p class="footer-copy">&copy; 2026 Region Tech LLC</p>
+    <p class="footer-copy">&copy; 2026 Region Tech LLC &mdash; Proudly serving Northwest Indiana</p>
   </div>
 </footer>
 
