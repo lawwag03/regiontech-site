@@ -4,21 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Media Conversion | Region Tech</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar">
   <a href="../index.html" class="logo">Region<span>Tech</span></a>
-
-  <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation">&#9776;</button>
   <div class="nav-links" id="navLinks">
     <a href="../index.html">Home</a>
-    <a href="../index.html#services">Services</a>
+    <a href="../services.html">Services</a>
     <a href="../index.html#why">Why Us</a>
     <a href="../index.html#how">How It Works</a>
     <a href="../projects.html">Projects</a>
@@ -26,109 +24,126 @@
   </div>
 </nav>
 
-<!-- HERO -->
 <header class="hero">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
   <div class="hero-content">
-    <p class="hero-eyebrow">Secure Local Service</p>
-    <h1>Media Conversion</h1>
+    <p class="hero-eyebrow">Preserve Your Memories</p>
+    <h1>Media <span>Conversion</span></h1>
     <p class="subtext">
-      Safe, responsible, and local electronics disposal with secure data handling.
+      Convert VHS tapes, film reels, and legacy media into digital formats you can watch, share, and keep forever.
     </p>
-
     <div class="hero-buttons">
-      <a href="../contact.html" class="btn btn-primary">Schedule Pickup</a>
-      <a href="../index.html#services" class="btn btn-outline">View Other Services</a>
+      <a href="../contact.html" class="btn btn-primary">Start Converting</a>
+      <a href="../services.html" class="btn btn-outline">View All Services</a>
     </div>
   </div>
 </header>
 
 <main class="container">
 
-  <!-- OVERVIEW -->
-  <section class="section">
-    <h2>Overview</h2>
+  <section class="section fade-in">
+    <div class="section-label">Overview</div>
+    <h2>Your memories are degrading right now</h2>
     <p class="section-intro">
-      We provide secure pickup and disposal of old electronics across Northwest Indiana.
-      Every device is handled safely with data protection and environmental responsibility in mind.
+      VHS tapes lose quality every year they sit on a shelf — and the players to watch them are disappearing fast.
+      Region Tech converts your legacy media into modern digital files so those moments aren't lost.
+      All done locally, handled carefully, returned to you.
     </p>
   </section>
 
-  <!-- WHAT WE HANDLE -->
-  <section class="section">
-    <h2>What We Handle</h2>
-
+  <section class="section fade-in">
+    <h2>What We Convert</h2>
     <div class="services">
       <div class="card">
-        <h3>Computers & Laptops</h3>
-        <p>Secure removal and recycling of personal and business machines.</p>
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+        </div>
+        <h3>VHS &amp; VHS-C Tapes</h3>
+        <p>Home videos, recorded movies, family moments — converted to MP4 or your preferred format.</p>
       </div>
-
       <div class="card">
-        <h3>Hard Drives</h3>
-        <p>Data-safe destruction or wiping before disposal.</p>
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h3>Camcorder Tapes</h3>
+        <p>Hi8, MiniDV, Digital8, and other camcorder formats digitized and preserved.</p>
       </div>
-
       <div class="card">
-        <h3>Networking Gear</h3>
-        <p>Routers, switches, modems, and infrastructure hardware.</p>
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+        </div>
+        <h3>Audio Cassettes</h3>
+        <p>Mixtapes, recordings, and personal audio transferred to digital MP3 or FLAC files.</p>
       </div>
-
       <div class="card">
-        <h3>Misc Electronics</h3>
-        <p>Printers, accessories, cables, and outdated tech.</p>
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg>
+        </div>
+        <h3>Photos &amp; Slides</h3>
+        <p>High-resolution scanning of printed photos, 35mm slides, and negatives.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3>CD &amp; DVD Ripping</h3>
+        <p>Extract content from aging CDs and DVDs before they degrade — music, video, data.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </div>
+        <h3>File Format Conversion</h3>
+        <p>Already digital but in the wrong format? We convert between video, audio, and image formats.</p>
       </div>
     </div>
   </section>
 
-  <!-- PROCESS -->
-  <section class="section">
-    <h2>Process</h2>
-
+  <section class="section fade-in">
+    <div class="section-label">Process</div>
+    <h2>How it works</h2>
     <div class="steps">
       <div class="step">
         <div class="step-num">01</div>
         <div class="step-body">
-          <h3>Schedule Pickup</h3>
-          <p>Contact us to set a time that works for you.</p>
+          <h3>Drop off or schedule pickup</h3>
+          <p>Bring your tapes, photos, or media to us — or we can pick them up locally.</p>
         </div>
       </div>
-
       <div class="step">
         <div class="step-num">02</div>
         <div class="step-body">
-          <h3>On-Site Collection</h3>
-          <p>We come to your home or business to collect devices securely.</p>
+          <h3>We digitize your media</h3>
+          <p>Each item is carefully converted to a modern digital format at the best quality possible.</p>
         </div>
       </div>
-
       <div class="step">
         <div class="step-num">03</div>
         <div class="step-body">
-          <h3>Secure Handling</h3>
-          <p>Data protection procedures are applied before disposal.</p>
+          <h3>Review and deliver</h3>
+          <p>Files delivered on USB drive, external hard drive, or cloud link — your choice.</p>
         </div>
       </div>
-
       <div class="step">
         <div class="step-num">04</div>
         <div class="step-body">
-          <h3>Responsible Recycling</h3>
-          <p>Devices are recycled or disposed of following environmental standards.</p>
+          <h3>Originals returned</h3>
+          <p>All your original tapes and media are returned to you safely after conversion.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="section">
+  <section class="section fade-in">
     <div class="cta">
       <div class="cta-content">
-        <h2>Ready to clear out old tech?</h2>
-        <p class="cta-sub">Fast, local, and secure pickup in Northwest Indiana.</p>
+        <p class="cta-eyebrow">Don't let memories fade</p>
+        <h2>Convert your media today</h2>
+        <p class="cta-sub">Handled locally. Returned safely. Northwest Indiana.</p>
       </div>
-
       <div class="cta-contact">
-        <a href="../contact.html" class="btn btn-primary">Schedule Pickup</a>
+        <a href="../contact.html" class="btn btn-primary">Get Started</a>
+        <a href="tel:+12192002408" class="btn btn-outline">(219) 200-2408</a>
       </div>
     </div>
   </section>
@@ -139,7 +154,7 @@
   <div class="footer-inner">
     <div class="footer-brand">Region<span>Tech</span> LLC</div>
     <p class="footer-tagline">Secure. Recycle. Repair.</p>
-    <p class="footer-copy">&copy; 2026 Region Tech LLC</p>
+    <p class="footer-copy">&copy; 2026 Region Tech LLC &mdash; Proudly serving Northwest Indiana</p>
   </div>
 </footer>
 
