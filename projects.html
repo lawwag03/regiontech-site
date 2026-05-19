@@ -1,1 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Region Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
 
+<nav class="navbar">
+  <a href="index.html" class="logo">Region<span>Tech</span></a>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation">&#9776;</button>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="index.html#why">Why Us</a>
+    <a href="index.html#how">How It Works</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Work & Direction</p>
+    <h1>Projects &amp; <span>Systems</span></h1>
+    <p class="subtext">
+      Real work, active builds, and the systems Region Tech is developing
+      to serve Northwest Indiana better.
+    </p>
+    <div class="hero-buttons">
+      <a href="contact.html" class="btn btn-primary">Work With Us</a>
+      <a href="services.html" class="btn btn-outline">View Services</a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- INTRO -->
+  <section class="section fade-in">
+    <div class="section-label">What This Page Is</div>
+    <h2>Capability, direction, and real work</h2>
+    <p class="section-intro">
+      Region Tech projects include live client work, internal systems, infrastructure builds,
+      and technical experiments across cybersecurity, device repair, and sustainable tech.
+      Some are complete. Some are actively in development. All of them reflect how we think and build.
+    </p>
+  </section>
+
+  <!-- ACTIVE PROJECTS -->
+  <section class="section fade-in">
+    <div class="section-label">Active Work</div>
+    <h2>Current projects</h2>
+    <div class="project-grid">
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <div class="project-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <span class="project-badge project-badge--live">Live</span>
+        </div>
+        <h3>Region Tech Website</h3>
+        <p>
+          Full design and build of the Region Tech digital presence — static architecture,
+          performance-focused, deployed through Cloudflare Pages. Built to grow with the business.
+        </p>
+        <div class="project-tags">
+          <span class="tag">HTML / CSS</span>
+          <span class="tag">Cloudflare Pages</span>
+          <span class="tag">Static Site</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <div class="project-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg>
+          </div>
+          <span class="project-badge project-badge--progress">In Development</span>
+        </div>
+        <h3>Local E-Waste Pickup System</h3>
+        <p>
+          A structured workflow for secure device pickup, data destruction, and responsible
+          recycling across Northwest Indiana — including intake tracking and disposal documentation.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Operations</span>
+          <span class="tag">Data Security</span>
+          <span class="tag">E-Waste</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <div class="project-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <span class="project-badge project-badge--live">Live</span>
+        </div>
+        <h3>Home Network Security Framework</h3>
+        <p>
+          A repeatable security configuration process for residential networks — covering router
+          hardening, device isolation, firmware audits, and threat reduction for NWI households.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Cybersecurity</span>
+          <span class="tag">Networking</span>
+          <span class="tag">Home</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <div class="project-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+          </div>
+          <span class="project-badge project-badge--live">Live</span>
+        </div>
+        <h3>VHS &amp; Media Conversion Pipeline</h3>
+        <p>
+          End-to-end digitization workflow for legacy media formats — VHS, VHS-C, Hi8,
+          audio cassettes, and printed photos — converting them to modern digital files
+          and returning originals safely.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Media</span>
+          <span class="tag">Digitization</span>
+          <span class="tag">Archival</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <div class="project-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <span class="project-badge project-badge--progress">In Development</span>
+        </div>
+        <h3>Small Business Security Assessments</h3>
+        <p>
+          A standardized audit process for NWI small businesses — documenting network
+          vulnerabilities, access control gaps, and backup failures with a written
+          remediation report delivered at the end of each engagement.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Cybersecurity</span>
+          <span class="tag">Business</span>
+          <span class="tag">Audit</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-header">
+          <div class="project-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <span class="project-badge project-badge--live">Live</span>
+        </div>
+        <h3>Device Repair &amp; Recovery Service</h3>
+        <p>
+          Hands-on repair and recovery for laptops, desktops, and peripherals across
+          Northwest Indiana. Includes a diagnostic intake process, flat-rate quoting,
+          and local pickup and return.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Hardware</span>
+          <span class="tag">Repair</span>
+          <span class="tag">Local Service</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHAT'S NEXT -->
+  <section class="section fade-in">
+    <div class="section-label">On The Roadmap</div>
+    <h2>What's coming next</h2>
+    <p class="section-intro" style="margin-bottom: 36px;">
+      Region Tech is building toward a fuller suite of local tech infrastructure.
+      Here's where we're headed.
+    </p>
+    <div class="roadmap">
+
+      <div class="roadmap-item">
+        <div class="roadmap-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        </div>
+        <div>
+          <strong>Online Pickup Scheduling</strong>
+          <p>A self-serve booking system for tech pickup and disposal requests — no phone tag required.</p>
+        </div>
+      </div>
+
+      <div class="roadmap-item">
+        <div class="roadmap-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div>
+          <strong>Client Service Dashboard</strong>
+          <p>A simple portal for clients to track repair status, view past services, and access documentation.</p>
+        </div>
+      </div>
+
+      <div class="roadmap-item">
+        <div class="roadmap-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div>
+          <strong>Automated Security Scanning Tools</strong>
+          <p>Lightweight, local-first tools for basic network vulnerability scanning for home users.</p>
+        </div>
+      </div>
+
+      <div class="roadmap-item">
+        <div class="roadmap-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <div>
+          <strong>AI-Assisted Device Diagnostics</strong>
+          <p>Tooling to help triage device issues faster before a technician visit — reducing time and cost.</p>
+        </div>
+      </div>
+
+      <div class="roadmap-item">
+        <div class="roadmap-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div>
+          <strong>NWI Community Tech Map</strong>
+          <p>A resource directory for Northwest Indiana residents — repair spots, recycling centers, and local tech help.</p>
+        </div>
+      </div>
+
+      <div class="roadmap-item">
+        <div class="roadmap-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <div>
+          <strong>Client Case Studies</strong>
+          <p>Detailed write-ups of real service engagements — problems, process, and outcomes.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section fade-in">
+    <div class="cta">
+      <div class="cta-content">
+        <p class="cta-eyebrow">Have a project in mind?</p>
+        <h2>Let's build something together</h2>
+        <p class="cta-sub">Whether it's a repair, a security setup, or something bigger — we're local and ready.</p>
+      </div>
+      <div class="cta-contact">
+        <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+        <a href="tel:+12192002408" class="btn btn-outline">(219) 200-2408</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">Region<span>Tech</span> LLC</div>
+    <p class="footer-tagline">Secure. Recycle. Repair.</p>
+    <p class="footer-copy">&copy; 2026 Region Tech LLC &mdash; Proudly serving Northwest Indiana</p>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
