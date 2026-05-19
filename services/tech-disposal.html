@@ -4,21 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tech Pickup & Disposal | Region Tech</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar">
   <a href="../index.html" class="logo">Region<span>Tech</span></a>
-
-  <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation">&#9776;</button>
   <div class="nav-links" id="navLinks">
     <a href="../index.html">Home</a>
-    <a href="../index.html#services">Services</a>
+    <a href="../services.html">Services</a>
     <a href="../index.html#why">Why Us</a>
     <a href="../index.html#how">How It Works</a>
     <a href="../projects.html">Projects</a>
@@ -26,109 +24,161 @@
   </div>
 </nav>
 
-<!-- HERO -->
 <header class="hero">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
   <div class="hero-content">
     <p class="hero-eyebrow">Secure Local Service</p>
-    <h1>Tech Pickup & Disposal</h1>
+    <h1>Tech Pickup &amp; <span>Disposal</span></h1>
     <p class="subtext">
-      Safe, responsible, and local electronics disposal with secure data handling.
+      Safe, responsible, and local electronics disposal — with secure data handling and eco-conscious recycling built in.
     </p>
-
     <div class="hero-buttons">
       <a href="../contact.html" class="btn btn-primary">Schedule Pickup</a>
-      <a href="../index.html#services" class="btn btn-outline">View Other Services</a>
+      <a href="../services.html" class="btn btn-outline">View All Services</a>
     </div>
   </div>
 </header>
 
 <main class="container">
 
-  <!-- OVERVIEW -->
-  <section class="section">
-    <h2>Overview</h2>
+  <section class="section fade-in">
+    <div class="section-label">Overview</div>
+    <h2>Old tech shouldn't end up in a landfill</h2>
     <p class="section-intro">
-      We provide secure pickup and disposal of old electronics across Northwest Indiana.
-      Every device is handled safely with data protection and environmental responsibility in mind.
+      Throwing electronics in the trash is illegal in many states — and your data goes with them.
+      Region Tech provides secure local pickup of old devices across Northwest Indiana, handles
+      data destruction properly, and ensures everything is recycled responsibly. No shipping. No drop-off hassle. We come to you.
     </p>
   </section>
 
-  <!-- WHAT WE HANDLE -->
-  <section class="section">
-    <h2>What We Handle</h2>
-
+  <section class="section fade-in">
+    <h2>What We Accept</h2>
     <div class="services">
       <div class="card">
-        <h3>Computers & Laptops</h3>
-        <p>Secure removal and recycling of personal and business machines.</p>
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3>Computers &amp; Laptops</h3>
+        <p>Desktops, laptops, all-in-ones — any age, any condition. Data wiped or drive destroyed before disposal.</p>
       </div>
-
       <div class="card">
-        <h3>Hard Drives</h3>
-        <p>Data-safe destruction or wiping before disposal.</p>
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+        </div>
+        <h3>Hard Drives &amp; SSDs</h3>
+        <p>Secure data wiping (DoD standard) or physical destruction — certified and documented on request.</p>
       </div>
-
       <div class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1" fill="currentColor"/></svg>
+        </div>
         <h3>Networking Gear</h3>
-        <p>Routers, switches, modems, and infrastructure hardware.</p>
+        <p>Routers, switches, modems, access points, and network infrastructure — reset and recycled.</p>
       </div>
-
       <div class="card">
-        <h3>Misc Electronics</h3>
-        <p>Printers, accessories, cables, and outdated tech.</p>
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        </div>
+        <h3>Phones &amp; Tablets</h3>
+        <p>Factory reset and responsibly recycled. Includes data wipe verification before disposal.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        </div>
+        <h3>Printers &amp; Peripherals</h3>
+        <p>Printers, scanners, monitors, keyboards, mice, and accessories — all accepted for recycling.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg>
+        </div>
+        <h3>Misc Electronics &amp; Cables</h3>
+        <p>Old chargers, cables, power strips, gaming hardware, and other electronics no longer in use.</p>
       </div>
     </div>
   </section>
 
-  <!-- PROCESS -->
-  <section class="section">
-    <h2>Process</h2>
+  <section class="section fade-in">
+    <div class="section-label">Data Security</div>
+    <h2>Your data doesn't leave with the hardware</h2>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-check" aria-hidden="true">&#10003;</div>
+        <div>
+          <strong>Secure data wiping</strong>
+          <p>Drives wiped using industry-standard methods before any device leaves our hands.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-check" aria-hidden="true">&#10003;</div>
+        <div>
+          <strong>Physical destruction available</strong>
+          <p>For sensitive business data, we offer physical drive destruction upon request.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-check" aria-hidden="true">&#10003;</div>
+        <div>
+          <strong>No resale without consent</strong>
+          <p>We won't refurbish or resell your device without your explicit approval.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-check" aria-hidden="true">&#10003;</div>
+        <div>
+          <strong>Local handling only</strong>
+          <p>Your devices stay in Northwest Indiana — not shipped to an unknown third party.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section class="section fade-in">
+    <div class="section-label">Process</div>
+    <h2>How it works</h2>
     <div class="steps">
       <div class="step">
         <div class="step-num">01</div>
         <div class="step-body">
-          <h3>Schedule Pickup</h3>
-          <p>Contact us to set a time that works for you.</p>
+          <h3>Schedule a pickup</h3>
+          <p>Contact us with a list of what you have. We'll confirm and schedule a time that works for you.</p>
         </div>
       </div>
-
       <div class="step">
         <div class="step-num">02</div>
         <div class="step-body">
-          <h3>On-Site Collection</h3>
-          <p>We come to your home or business to collect devices securely.</p>
+          <h3>We collect on-site</h3>
+          <p>We come to your home or business to collect devices — no hauling anything yourself.</p>
         </div>
       </div>
-
       <div class="step">
         <div class="step-num">03</div>
         <div class="step-body">
-          <h3>Secure Handling</h3>
-          <p>Data protection procedures are applied before disposal.</p>
+          <h3>Secure data handling</h3>
+          <p>All drives and storage media are wiped or destroyed before the device moves to recycling.</p>
         </div>
       </div>
-
       <div class="step">
         <div class="step-num">04</div>
         <div class="step-body">
-          <h3>Responsible Recycling</h3>
-          <p>Devices are recycled or disposed of following environmental standards.</p>
+          <h3>Responsible recycling</h3>
+          <p>Devices are recycled or disposed of following environmental standards — nothing goes to landfill.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="section">
+  <section class="section fade-in">
     <div class="cta">
       <div class="cta-content">
-        <h2>Ready to clear out old tech?</h2>
-        <p class="cta-sub">Fast, local, and secure pickup in Northwest Indiana.</p>
+        <p class="cta-eyebrow">Ready to clear it out?</p>
+        <h2>Schedule a local tech pickup</h2>
+        <p class="cta-sub">Free local pickup. Secure disposal. Northwest Indiana.</p>
       </div>
-
       <div class="cta-contact">
         <a href="../contact.html" class="btn btn-primary">Schedule Pickup</a>
+        <a href="tel:+12192002408" class="btn btn-outline">(219) 200-2408</a>
       </div>
     </div>
   </section>
@@ -139,7 +189,7 @@
   <div class="footer-inner">
     <div class="footer-brand">Region<span>Tech</span> LLC</div>
     <p class="footer-tagline">Secure. Recycle. Repair.</p>
-    <p class="footer-copy">&copy; 2026 Region Tech LLC</p>
+    <p class="footer-copy">&copy; 2026 Region Tech LLC &mdash; Proudly serving Northwest Indiana</p>
   </div>
 </footer>
 
