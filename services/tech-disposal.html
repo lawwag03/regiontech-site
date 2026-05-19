@@ -183,6 +183,84 @@
     </div>
   </section>
 
+<!-- =============================================
+     REGION TECH — Contact Form Snippet
+     Drop this inside a <section> or <div>
+     within your .container on any page.
+     Requires contact form CSS in style.css.
+     ============================================= -->
+
+<section class="section fade-in" id="contact-form">
+  <div class="section-label">Contact</div>
+  <h2>Send us a message</h2>
+  <p class="section-intro">
+    Describe what you need and we'll get back to you with next steps and pricing.
+  </p>
+
+  <form
+    action="https://api.web3forms.com/submit"
+    method="POST"
+    class="contact-form"
+  >
+  <input type="hidden" name="access_key" value="edbbfa2b-58e3-4f3c-8820-8a0ff33c2e7c">
+  <input type="hidden" name="subject" value="New Region Tech Service Request">
+  <input type="hidden" name="redirect" value="https://regiontech.org/thankyou.html">
+
+    <div class="form-grid">
+      <div class="form-group">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="First Name" placeholder="Jane" required>
+      </div>
+      <div class="form-group">
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="Last Name" placeholder="Smith" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="Email" placeholder="you@example.com" required>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone Number <span class="form-optional">(optional)</span></label>
+      <input type="tel" id="phone" name="Phone" placeholder="(219) 555-0100">
+    </div>
+
+    <div class="form-group">
+      <label for="service">Requested Service</label>
+      <div class="select-wrapper">
+        <select id="service" name="Service">
+          <option value="">Select a service...</option>
+          <option>Home Cybersecurity</option>
+          <option>Business Cybersecurity</option>
+          <option>Tech Repair &amp; Installation</option>
+          <option>Wi-Fi &amp; Network Optimization</option>
+          <option>Tech Pickup &amp; Disposal</option>
+          <option>Media Conversion</option>
+          <option>Other / Not Sure</option>
+        </select>
+        <svg class="select-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="message">How can we help?</label>
+      <textarea
+        id="message"
+        name="Message"
+        rows="6"
+        placeholder="Describe your device, issue, or what you need. The more detail the better."
+        required
+      ></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-full">Send Request</button>
+
+  </form>
+</section>
+
+  
 </main>
 
 <footer>
