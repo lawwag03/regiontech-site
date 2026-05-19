@@ -3,22 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tech Repair | Region Tech</title>
-
+  <title>Tech Repairs & Installations | Region Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar">
   <a href="../index.html" class="logo">Region<span>Tech</span></a>
-
-  <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation">&#9776;</button>
   <div class="nav-links" id="navLinks">
     <a href="../index.html">Home</a>
-    <a href="../index.html#services">Services</a>
+    <a href="../services.html">Services</a>
     <a href="../index.html#why">Why Us</a>
     <a href="../index.html#how">How It Works</a>
     <a href="../projects.html">Projects</a>
@@ -26,109 +24,125 @@
   </div>
 </nav>
 
-<!-- HERO -->
 <header class="hero">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
   <div class="hero-content">
-    <p class="hero-eyebrow">Secure Local Service</p>
-    <h1>Tech Repair</h1>
+    <p class="hero-eyebrow">Repairs & Setup</p>
+    <h1>Tech Repairs &amp; <span>Installations</span></h1>
     <p class="subtext">
-      Safe, responsible, and local electronics disposal with secure data handling.
+      Hardware repair, new device setup, system optimization, and troubleshooting — done locally and quickly.
     </p>
-
     <div class="hero-buttons">
-      <a href="../contact.html" class="btn btn-primary">Schedule Pickup</a>
-      <a href="../index.html#services" class="btn btn-outline">View Other Services</a>
+      <a href="../contact.html" class="btn btn-primary">Book a Repair</a>
+      <a href="../services.html" class="btn btn-outline">View All Services</a>
     </div>
   </div>
 </header>
 
 <main class="container">
 
-  <!-- OVERVIEW -->
-  <section class="section">
-    <h2>Overview</h2>
+  <section class="section fade-in">
+    <div class="section-label">Overview</div>
+    <h2>Fix it fast. No shipping required.</h2>
     <p class="section-intro">
-      We provide secure pickup and disposal of old electronics across Northwest Indiana.
-      Every device is handled safely with data protection and environmental responsibility in mind.
+      Whether your laptop won't boot, your PC is crawling, or you just got a new device and need it set up right,
+      Region Tech handles it locally. We come to you or you bring it to us — no waiting weeks for a mail-in repair center.
     </p>
   </section>
 
-  <!-- WHAT WE HANDLE -->
-  <section class="section">
-    <h2>What We Handle</h2>
-
+  <section class="section fade-in">
+    <h2>What We Repair &amp; Install</h2>
     <div class="services">
       <div class="card">
-        <h3>Computers & Laptops</h3>
-        <p>Secure removal and recycling of personal and business machines.</p>
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3>Laptop & Desktop Repair</h3>
+        <p>Slow performance, boot failures, overheating, broken hardware — diagnosed and fixed.</p>
       </div>
-
       <div class="card">
-        <h3>Hard Drives</h3>
-        <p>Data-safe destruction or wiping before disposal.</p>
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+        </div>
+        <h3>Storage Upgrades</h3>
+        <p>Replace or upgrade hard drives and SSDs for faster, more reliable performance.</p>
       </div>
-
       <div class="card">
-        <h3>Networking Gear</h3>
-        <p>Routers, switches, modems, and infrastructure hardware.</p>
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3>OS Installation & Reinstall</h3>
+        <p>Fresh Windows or Linux install to clear out bloatware, viruses, or corruption.</p>
       </div>
-
       <div class="card">
-        <h3>Misc Electronics</h3>
-        <p>Printers, accessories, cables, and outdated tech.</p>
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3>New Device Setup</h3>
+        <p>Got a new computer? We set it up fully — accounts, updates, apps, data transfer, and security.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h3>Peripheral Installation</h3>
+        <p>Printers, monitors, external drives, smart home devices — set up and working correctly.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>System Optimization</h3>
+        <p>Speed up a sluggish machine: clean startup programs, remove bloatware, tune performance settings.</p>
       </div>
     </div>
   </section>
 
-  <!-- PROCESS -->
-  <section class="section">
-    <h2>Process</h2>
-
+  <section class="section fade-in">
+    <div class="section-label">Process</div>
+    <h2>How it works</h2>
     <div class="steps">
       <div class="step">
         <div class="step-num">01</div>
         <div class="step-body">
-          <h3>Schedule Pickup</h3>
-          <p>Contact us to set a time that works for you.</p>
+          <h3>Describe the issue</h3>
+          <p>Call, text, or email us with what's going on. We'll give you an upfront flat-rate quote.</p>
         </div>
       </div>
-
       <div class="step">
         <div class="step-num">02</div>
         <div class="step-body">
-          <h3>On-Site Collection</h3>
-          <p>We come to your home or business to collect devices securely.</p>
+          <h3>Drop-off or pickup</h3>
+          <p>We can collect your device locally, or you can drop it off — whatever works for you.</p>
         </div>
       </div>
-
       <div class="step">
         <div class="step-num">03</div>
         <div class="step-body">
-          <h3>Secure Handling</h3>
-          <p>Data protection procedures are applied before disposal.</p>
+          <h3>Diagnosis and repair</h3>
+          <p>We diagnose the problem, confirm with you before any work, then complete the fix.</p>
         </div>
       </div>
-
       <div class="step">
         <div class="step-num">04</div>
         <div class="step-body">
-          <h3>Responsible Recycling</h3>
-          <p>Devices are recycled or disposed of following environmental standards.</p>
+          <h3>Return or on-site delivery</h3>
+          <p>We return your repaired device or install it on-site — ready to use, fully tested.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="section">
+  <section class="section fade-in">
     <div class="cta">
       <div class="cta-content">
-        <h2>Ready to clear out old tech?</h2>
-        <p class="cta-sub">Fast, local, and secure pickup in Northwest Indiana.</p>
+        <p class="cta-eyebrow">Something broken?</p>
+        <h2>Let's get it fixed</h2>
+        <p class="cta-sub">Fast turnaround. Flat-rate pricing. Northwest Indiana.</p>
       </div>
-
       <div class="cta-contact">
-        <a href="../contact.html" class="btn btn-primary">Schedule Pickup</a>
+        <a href="../contact.html" class="btn btn-primary">Book a Repair</a>
+        <a href="tel:+12192002408" class="btn btn-outline">(219) 200-2408</a>
       </div>
     </div>
   </section>
@@ -139,7 +153,7 @@
   <div class="footer-inner">
     <div class="footer-brand">Region<span>Tech</span> LLC</div>
     <p class="footer-tagline">Secure. Recycle. Repair.</p>
-    <p class="footer-copy">&copy; 2026 Region Tech LLC</p>
+    <p class="footer-copy">&copy; 2026 Region Tech LLC &mdash; Proudly serving Northwest Indiana</p>
   </div>
 </footer>
 
