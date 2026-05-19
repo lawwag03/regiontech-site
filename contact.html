@@ -1,1 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Region Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
 
+<nav class="navbar">
+  <a href="index.html" class="logo">Region<span>Tech</span></a>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation">&#9776;</button>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="index.html#why">Why Us</a>
+    <a href="index.html#how">How It Works</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Get In Touch</p>
+    <h1>Contact <span>Region Tech</span></h1>
+    <p class="subtext">
+      Call, text, email, or fill out the form — we respond fast and keep things simple.
+    </p>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- CONTACT METHODS -->
+  <section class="section fade-in">
+    <div class="section-label">Reach Us</div>
+    <h2>However works best for you</h2>
+    <div class="contact-methods">
+
+      <a href="tel:+12192002408" class="contact-method">
+        <div class="contact-method-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+        </div>
+        <div class="contact-method-body">
+          <strong>Call or Text</strong>
+          <span>(219) 200-2408</span>
+        </div>
+        <svg class="contact-method-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+
+      <a href="mailto:info@regiontech.org" class="contact-method">
+        <div class="contact-method-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+        </div>
+        <div class="contact-method-body">
+          <strong>Email</strong>
+          <span>info@regiontech.org</span>
+        </div>
+        <svg class="contact-method-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+
+      <div class="contact-method contact-method--static">
+        <div class="contact-method-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
+        <div class="contact-method-body">
+          <strong>Response Time</strong>
+          <span>Within 24 hours — usually same day</span>
+        </div>
+      </div>
+
+      <div class="contact-method contact-method--static">
+        <div class="contact-method-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+        </div>
+        <div class="contact-method-body">
+          <strong>Service Area</strong>
+          <span>Northwest Indiana</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FORM + SIDEBAR -->
+  <section class="section fade-in">
+    <div class="contact-layout">
+
+      <!-- FORM -->
+      <div class="contact-form-wrapper">
+        <div class="section-label">Service Request</div>
+        <h2>Send us a message</h2>
+        <p class="section-intro" style="margin-bottom: 32px;">
+          Describe what you need and we'll get back to you with next steps and pricing.
+        </p>
+
+        <form
+          action="https://formsubmit.co/info@regiontech.org"
+          method="POST"
+          class="contact-form"
+        >
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New Region Tech Service Request">
+          <input type="hidden" name="_next" value="https://regiontech.org/thankyou.html">
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="First Name" placeholder="Jane" required>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="Last Name" placeholder="Smith" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="Email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number <span class="form-optional">(optional)</span></label>
+            <input type="tel" id="phone" name="Phone" placeholder="(219) 555-0100">
+          </div>
+
+          <div class="form-group">
+            <label for="service">Requested Service</label>
+            <div class="select-wrapper">
+              <select id="service" name="Service">
+                <option value="">Select a service...</option>
+                <option>Home Cybersecurity</option>
+                <option>Business Cybersecurity</option>
+                <option>Tech Repair &amp; Installation</option>
+                <option>Wi-Fi &amp; Network Optimization</option>
+                <option>Tech Pickup &amp; Disposal</option>
+                <option>Media Conversion</option>
+                <option>Other / Not Sure</option>
+              </select>
+              <svg class="select-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">How can we help?</label>
+            <textarea
+              id="message"
+              name="Message"
+              rows="6"
+              placeholder="Describe your device, issue, or what you need. The more detail the better."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Send Request</button>
+
+        </form>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="contact-sidebar">
+
+        <div class="sidebar-card">
+          <p class="sidebar-card-label">What happens next</p>
+          <div class="sidebar-steps">
+            <div class="sidebar-step">
+              <div class="sidebar-step-num">01</div>
+              <p>We review your request and reach out within 24 hours.</p>
+            </div>
+            <div class="sidebar-step">
+              <div class="sidebar-step-num">02</div>
+              <p>We confirm the service, quote a flat rate, and schedule a time.</p>
+            </div>
+            <div class="sidebar-step">
+              <div class="sidebar-step-num">03</div>
+              <p>We come to you — or you drop it off — and get it handled.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <p class="sidebar-card-label">Services</p>
+          <div class="sidebar-service-links">
+            <a href="services/cybersecurity-home.html">Home Cybersecurity</a>
+            <a href="services/cybersecurity-business.html">Business Cybersecurity</a>
+            <a href="services/tech-repair.html">Tech Repairs &amp; Installs</a>
+            <a href="services/network-optimization.html">Wi-Fi &amp; Network</a>
+            <a href="services/tech-disposal.html">Tech Pickup &amp; Disposal</a>
+            <a href="services/media-conversion.html">Media Conversion</a>
+          </div>
+        </div>
+
+      </aside>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">Region<span>Tech</span> LLC</div>
+    <p class="footer-tagline">Secure. Recycle. Repair.</p>
+    <p class="footer-copy">&copy; 2026 Region Tech LLC &mdash; Proudly serving Northwest Indiana</p>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
