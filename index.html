@@ -243,6 +243,85 @@
     </div>
   </section>
 
+  <!-- CONTACT FORM -->
+<section class="section fade-in" id="contact-form">
+
+  <div class="section-label">Contact</div>
+
+  <h2>Request Service</h2>
+
+  <p class="section-intro">
+    Have a repair, pickup, cybersecurity issue, or tech question?
+    Send us a message and we'll get back to you.
+  </p>
+
+  <form
+    action="https://formsubmit.co/info@regiontech.org"
+    method="POST"
+    class="contact-form"
+  >
+
+    <!-- Disable captcha -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- Email subject -->
+    <input type="hidden" name="_subject" value="New Region Tech Service Request">
+
+    <!-- Optional redirect after submit -->
+    <input type="hidden" name="_next" value="https://regiontech.org/thank-you.html">
+
+    <div class="form-grid">
+
+      <div class="form-group">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="First Name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="Last Name" required>
+      </div>
+
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="Email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="service">Requested Service</label>
+
+      <select id="service" name="Service">
+        <option>Tech Repair</option>
+        <option>Home Cybersecurity</option>
+        <option>Business Cybersecurity</option>
+        <option>Wi-Fi Optimization</option>
+        <option>Tech Disposal</option>
+        <option>Media Conversion</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="message">How can we help?</label>
+
+      <textarea
+        id="message"
+        name="Message"
+        rows="6"
+        required
+      ></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+      Send Request
+    </button>
+
+  </form>
+
+</section>
+
 </main>
 
 <footer>
